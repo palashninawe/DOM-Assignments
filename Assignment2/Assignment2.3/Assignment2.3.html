@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          html,body{
+               width: 100vw;
+               height: 100vh;
+          }
+          .main-cont{
+               width: 100%;
+               height: 100%;
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               
+          }
+          .main-cont-child{
+               width: 30%;
+               height: 100%;
+          }
+          .main-cont-child-top{
+               width: 100%;
+               height: 25%;
+               background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/tip-calculator-img.png");
+               background-size: cover;
+          }
+          .main-cont-child-bottom{
+               width: 100%;
+               height: 75%;
+               background-color: #efecec;
+               display: flex;
+               flex-direction: column;
+               padding: 10px;
+          }
+          .heading{
+               text-align: center;
+               font-size: 55px;
+               margin-top: 10px;
+               color: rgb(6, 62, 147);
+          }
+          .inpnumber{
+               height: 40px;
+               border: 2px solid rgb(213, 211, 211);
+               border-radius: 3px;
+               padding: 10px;
+          }
+          .inpnumber1{
+               height: 40px;
+               background-color: white;
+               border: 2px solid rgb(213, 211, 211);
+               border-radius: 3px;
+               padding: 10px;
+          }
+          .btndiv{
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               margin-top: 30px;
+          }
+          .btn{
+               width: 120px;
+               height: 40px;
+               background-color: rgb(6, 62, 147);
+               border: 3px solid rgb(121, 158, 213);
+               border-radius: 5px;
+               color: rgb(194, 214, 246);
+               font-size: 16px;
+          }
+          .reslt{
+               font-size: 20px;
+               color: red;
+               text-align: center;
+               margin-top: 10px;
+          }
+     </style>
+</head>
+<body>
+      <div class="main-cont">
+          <div class="main-cont-child">
+               <div class="main-cont-child-top"></div>
+               <div class="main-cont-child-bottom">
+                    <h1 class="heading">Tip Calculator</h1>
+                    <br>
+
+                    BILL AMOUNT <br>
+                    <input id="billAmount" class="inpnumber" type="number">
+                    <br><br>
+
+                    PERCENTAGE TIP <br>
+                    <input id="percentageTip" class="inpnumber" type="number">
+                    <br><br>
+
+                    TIP AMOUNT <br>
+                    <p id="tipAmount" class="inpnumber1" ></p>
+                    <br><br>
+
+                    TOTAL <br>
+                    <p id="total" class="inpnumber1"></p>
+                    
+
+                    <div class="btndiv"><button id="buttonCalculate" class="btn">CALCULATE</button></div>
+
+                    <p id="errorShow" class="reslt"></p>
+
+
+               </div>
+          </div>
+      </div>
+     <script src="Assignment2.3.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          html,body{
+               width: 100vw;
+               height: 100vh;
+          }
+          .main-cont{
+               width: 100%;
+               height: 100%;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+          .main-cont-child{
+               width: 400px;
+               height: 100%;
+               background-color: rgb(245, 242, 242);
+               display: flex;
+               flex-direction: column;    
+               align-items: center;
+               padding: 20px;
+          }
+          .heading{
+               margin-top: 20px;
+               font-size: 40px;
+               color: black;
+          }
+          .para1{
+               text-align: center;
+          }
+          .img{
+               width :100% ;
+               height: 30%;
+               border-radius: 10px;
+          }
+          .btndiv{
+               display: flex;
+               flex-direction: row;
+               width: 100%;
+          }
+          .btn1{
+               width: 33%;
+               height: 50px;
+               border: none;
+               background-color: white;
+               border-radius: 5px;
+          }
+          .btn{
+               width: 33%;
+               height: 50px;
+               border: none;
+               background-color: #e0e0e0;
+               margin-left: 2px;
+               border-radius: 5px;
+          }
+          .paradiv{
+               padding: 20px;
+               background-color: white;
+          }
+     </style>
+</head>
+<body>
+     <div class="main-cont">
+          <div class="main-cont-child">
+               <h1 class="heading"> Varanasi</h1> <br>
+               <p class="para1">
+                    The city is very commonly referred to as City of Temples, Holy City of India, 
+                    Religious Capital of India, and City of Learning.
+               </p> <br>
+               <img class="img" src="https://varanasi.tourismindia.co.in/images/places-to-visit/headers/dashashwamedh-ghat-varanasi-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="">
+               <br><br>
+               <div class="btndiv">
+                    <button id="buttonAbout" class="btn1">About</button>
+                    <button id="buttonTime" class="btn">Time to visit</button>
+                    <button id="buttonAttraction" class="btn">Attractions</button>
+               </div>
+               <div  class="paradiv">
+                    <p id="paragraphDetails">
+                         Varanasi is one of the oldest living cities in the world. 
+                         Its Prominence in Hindu mythology is virtually unrevealed. 
+                         Mark Twain, the English author and literature, who was enthralled by 
+                         the legend and sanctity of Benaras, once wrote, "Benaras is older 
+                         than history, older than tradition, older even than legend and looks 
+                         twice as old as all of them put together".
+                    </p>
+               </div>
+          </div>
+     </div>
+     <script src="Assignment3.4.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+           *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          html,body{
+               width: 100vw;
+               height: 100vh;
+          }
+          .main-cont{
+               width: 100%;
+               height: 100%;
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               align-items: center;
+          }
+          .main-cont-child{
+               width: 30%;
+               height: 90%;
+               background-color: rgb(237, 235, 235);
+               padding: 20px;
+               display: flex;
+               flex-direction: column;
+               /* justify-content: center; */
+               align-items: center;
+          }
+          .heading{
+               font-size: 70px;
+               text-align: center;
+          }
+          .error{
+               font-size: 20px;
+               color: red;
+          }
+          .img{
+               width: 200px;
+               height: 180px;
+          }
+          .btndiv{
+               width: 150px;
+               height: 50px;
+               background-color: white;
+               margin-top: 20px;
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               align-items: center;
+          }
+          .btn1{
+               width: 40px;
+               height: 20px;
+               border: none;
+               background-color: white;
+               margin-right: 5px;
+          }
+          .btn2{
+               width: 40px;
+               height: 20px;
+               border: none;
+               background-color: white;
+               margin-left: 5px;
+          }
+     </style>
+</head>
+<body>
+     <div class="main-cont">
+          <div class="main-cont-child">
+               <h1 class="heading">Sizing an Image</h1>
+          
+               <br><br>
+               <p id="alertBox" class="error"></p>
+               <br><br>
+               <img id="dogImage" class="img" src="https://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/01/03165939/Dogs.jpg" alt="">
+               <br>
+               <p id="widthPixel">Width: 200px</p>
+               <div class="btndiv">
+                    <div><button id="buttonDecrease" class="btn1"> <b>-</b> </button></div>
+                    <div><h3>| 5px |</h3></div>
+                    <div><button id="buttonIncrease" class="btn2"> <b>+</b> </button></div>
+               </div>
+          </div>
+     </div>
+     <script src="Assignment2.4.js"></script>
+</body>
+</html>

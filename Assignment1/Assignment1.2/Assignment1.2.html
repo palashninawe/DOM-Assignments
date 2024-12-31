@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+           *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          html,body{
+               width: 100vw;
+               height: 100vh;
+          }
+          .main-cont{
+               width: 100%;
+               height: 100%;
+               background-color: rgb(104, 202, 241);
+               padding: 50px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+          }
+          .heading{
+               font-size: 80px;
+          }
+          .main-cont-child{
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               margin-top: 80px;
+          }
+          .child-cont-left{
+               width: 130px;
+               height: 350px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+          .btn1{
+               width: 75px;
+               height: 45px;
+               background-color: rgb(30, 30, 61);
+               border-radius: 15px;
+               border: none;
+          }
+          .indicate{
+               color: white;
+          }
+          .btn2{
+               width: 75px;
+               height: 45px;
+               background-color: rgb(30, 30, 61);
+               margin-top: 50px;
+               border-radius: 15px;
+               border: none;
+          }
+          .btn3{
+               width: 75px;
+               height: 45px;
+               background-color: rgb(30, 30, 61);
+               margin-top: 50px;
+               border-radius: 15px;
+               border: none;
+          }
+          .child-cont-right{
+               background-color: rgb(30, 30, 61);
+               border-radius: 35px;
+               width: 130px;
+               height: 350px;
+               margin-left: 30px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+          .colorlight1{
+               width: 60px;
+               height: 60px;
+               border-radius: 30px;
+               background-color: gray;
+          }
+          .colorlight2{
+               width: 60px;
+               height: 60px;
+               border-radius: 30px;
+               background-color: gray;
+               margin-top: 30px;
+          }
+          .colorlight3{
+               width: 60px;
+               height: 60px;
+               border-radius: 30px;
+               background-color: gray;
+               margin-top: 30px;
+          }
+     </style>
+</head>
+<body>
+     <div class="main-cont">
+          <h1 class="heading">Traffic Light</h1>
+          <div class="main-cont-child">
+               <div class="child-cont-left">
+                    <button id="buttonStop" class="btn1"><p class="indicate">Stop</p></button>
+                    <button id="buttonReady" class="btn2"><p class="indicate">Ready</p></button>
+                    <button id="buttonGo" class="btn3"><p class="indicate">Go</p></button>
+               </div>
+               <div class="child-cont-right">
+                    <div id="colorStop" class="colorlight1"></div>
+                    <div id="colorReady" class="colorlight2"></div>
+                    <div id="colorGo" class="colorlight3"></div>
+               </div>
+          </div>
+     </div>
+     <script src="Assignment1.2.js"></script>
+</body>
+</html>

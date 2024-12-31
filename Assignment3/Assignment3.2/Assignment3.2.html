@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          html,body{
+               width: 100vw;
+               height: 100vh;
+          }
+          .main-cont{
+               width: 100%;
+               height: 100%;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+          .main-cont-child{
+               width: 500px;
+               height: 100%;
+               
+               display: flex;
+               flex-direction: column;    
+               align-items: center;
+          }
+          .child-top{
+               width: 100%;
+               height: 40%;
+               padding: 20px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+          .heading{
+               text-align: center;
+               font-size: 50px;
+          }
+          .btn{
+               width: 150px;
+               height: 50px;
+               border-radius: 25px;
+               background-color: rgb(33, 80, 237);
+               border: none;
+               font-size: 20px;
+               color: white;
+          }
+          .child-bottom{
+               width: 100%;
+               height: 60%;
+               background-color: white;
+          }
+     </style>
+</head>
+<body>
+     <div class="main-cont">
+          <div class="main-cont-child">
+               <div class="child-top">
+                    <h1 class="heading">Click the below Button to Change Color</h1>
+                    <br><br>
+                    <button id="buttonClickMe" class="btn">Click Me</button>
+               </div>
+               <div id="colorChange" class="child-bottom"></div>
+          </div>
+     </div>
+     <script src="Assignment3.2.js"></script>
+</body>
+</html>

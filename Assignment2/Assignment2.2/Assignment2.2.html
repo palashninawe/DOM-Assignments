@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/a885406e89.js" crossorigin="anonymous"></script>
+     <title>Document</title>
+     <style>
+           *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          html,body{
+               width: 100vw;
+               height: 100vh;
+          }
+          .main-cont{
+               width: 100%;
+               height: 100%;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+          .img{
+               width: 430px;
+               height: 270px;
+          }
+          .child-cont{
+               margin-top: 30px;
+               display: flex;
+               flex-direction: row;
+          }
+          .btn{
+               font-size: 20px;
+               width: 120px;
+               height: 50px;
+               background-color: #c3c4c6;
+               margin-left: 10px;
+               border: none;
+               border-radius: 10px;
+          }
+          .likeicon{
+               font-size: 50px;
+          }
+     </style>
+</head>
+<body>
+     <div class="main-cont">
+          <img id="dogImage" class="img" src="https://www.the-sun.com/wp-content/uploads/sites/6/2023/04/adorable-white-pomeranian-puppy-spitz-809043494.jpg" alt="">
+          <div class="child-cont">
+               <div><i id="likeIcon" class="fa-solid fa-thumbs-up likeicon" style="color: #c3c4c6;"></i></div>
+               <button id="buttonLike" class="btn">Like</button>
+          </div>
+     </div>
+     <script src="Assignment2.2.js"></script>
+</body>
+</html>
